@@ -1,9 +1,9 @@
+/*Global part*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -11,6 +11,7 @@ body {
     background-color:indigo;
 }
 
+/*Header part*/
 header {
     text-align: center;
     display: flex;
@@ -19,18 +20,41 @@ header {
     border-color: #fff;
     border-width: 0.1vw;
 }
-
 header h1 {
     margin-right: 5vw;
     margin-bottom: 5vh;
     margin-top: 5vh;
 }
 
+/*Navigation part*/
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2vw; /* Space between nav items */
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0.1vw;
+    margin: 5vh 0; /* Margin for top and bottom */
+}
+
+/*Main part*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0; /* Margin for top and bottom */
+    border-style: solid;
+    border-color: #fff; 
+    border-width: 0.1vw;
+}
+
+/*Footer part*/
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0; /* Margin for top and bottom */
     border-style: solid;
     border-color: #fff;
     border-width: 0.1vw;
