@@ -17,11 +17,21 @@ header {
     justify-content: center;
     border-style: solid;
     border-color: #fff;
-    border-width: 2px;
+    border-width: 0.1vw;
 }
 
 header h1 {
     margin-right: 5vw;
     margin-bottom: 5vh;
     margin-top: 5vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw; /* Space between nav items */
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0.1vw;
 }
