@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color:indigo;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 2px;
+}
+
+header h1 {
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
