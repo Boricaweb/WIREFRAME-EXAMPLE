@@ -82,7 +82,6 @@ header li.font {
     font-family: 'Chilling Nightime', sans-serif;
 }
     
-
 /*Navigation part*/
 nav {
     width: 60vw;
@@ -90,12 +89,31 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2vw; /* Space between nav items */
-    border-style: solid;
-    border-color: #fff;
-    border-width: 0.2vw;
+    border: solid 0.2vw #fff;
     margin: 5vh 0; /* Margin for top and bottom */
 }
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 10vw;
+}
+nav ul.navigation-bar {
+   display: flex;
+   flex-direction: row;
+}
+nav button {
+    background-color: #24221e;
+    color: #fff;
+    padding: 1vh 1vw;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0.3vw 0.3vh  rgb(97, 77, 77);
+}
+
 
 /*Main part*/
 main {
