@@ -15,6 +15,7 @@ body {
 }
 
 /*Header part*/
+/*Setting all element in header*/
 header {
     width: 60vw;
     height: 60vh;
@@ -25,11 +26,12 @@ header {
     align-items: center;
     border: solid 0.2vw #FFF;
 }
+/*Setting Web name and logo position*/
 header h1 {
     font-size: 2.8em;
     font-family: 'Chilling Nightime', sans-serif;
     font-weight: bold;      
-    color: white;     
+    color: red;     
     -webkit-text-stroke: black 0.01vw;                           
     width: 20vw;
     height: 20vh;
@@ -42,7 +44,8 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-}   
+} 
+/*Setting description part layout*/  
 .header-description-points {
     display: flex;
     align-items: center;
@@ -53,20 +56,23 @@ header h1 {
     width: 30vw;
     height: 55vh;
 }
+/*Setting description style*/
 .header-description-points li {
     margin: 3vh 0;
     font-size: 1em;
     font-weight: bold;
 }
+/*Part color*/
 header li.color {
     width: 10vw;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    color: black;
+    background-color: red;
+    color: white;
 }
+/*Part font and text style*/
 header p.topic {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -83,35 +89,93 @@ header li.font {
 }
     
 /*Navigation part*/
+/*Setting all element in navigation*/
 nav {
     width: 60vw;
     height: 60vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border: solid 0.2vw #fff;
     margin: 5vh 0; /* Margin for top and bottom */
 }
+/*Setting position between navigation-bar and nav-description*/
 nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto 10vw;
 }
+/*Setting navigation-bar position*/
 nav ul.navigation-bar {
    display: flex;
    flex-direction: row;
+   margin: 5vh 0;
 }
+/*Customized nav-bar button*/
 nav button {
     background-color: #24221e;
     color: #fff;
     padding: 1vh 1vw;
+    border: solid 0.1vw #fc0404;
+    border-style: collapse;
+    border-radius: 0.5vw;
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0.3vw 0.3vh  rgb(97, 77, 77);
+    transition: all 0.3s ease;
+    box-shadow: 0.2vw 0.2vh  rgb(244, 8, 8);/**/
+}
+nav button:hover {
+    background-color: #fff;
+    color: #24221e;
+    box-shadow: 0.2vw 0.2vh  rgb(244, 8, 8);
+    transform: scale(1.2);
+}
+nav button:active {
+    transform: scale(0.95);/*Simulate click button*/
+}
+/*Setting nav-description layout*/
+nav ul.navigation-description-points {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    color: #24221e;
+    border: dashed 0.5vw #f0fc08;
+    width: 30vw;
+    height: 55vh;
+}
+/*Setting description style*/
+nav ul.navigation-description-points li {
+    margin: 3vh 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+/*Part color*/
+nav li.color {
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+}
+/*Part font and text style*/
+nav p.topic {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+nav p.font-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+nav li.font {
+    display: block;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
