@@ -49,7 +49,7 @@ header h1 {
     flex-direction: column;
     list-style: none;
     color: #24221e;
-    border: solid 0.2vw #FFF;
+    border: dashed 0.5vw #f0fc08;
     width: 30vw;
     height: 55vh;
 }
