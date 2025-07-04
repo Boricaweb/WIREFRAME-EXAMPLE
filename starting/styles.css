@@ -8,11 +8,12 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #ffffff;
-    background-color:hsl(283, 88%, 24%);
+    background-color:hsl(283, 100%, 50%);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 /*Header part*/
 /*Setting all element in header*/
@@ -25,6 +26,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     border: solid 0.2vw #FFF;
+    background-color: #76048d;
 }
 /*Setting Web name and logo position*/
 header h1 {
@@ -95,6 +97,7 @@ header pre {
     align-items: flex-start;
 }
     
+
 /*Navigation part*/
 /*Setting all element in navigation*/
 nav {
@@ -106,6 +109,7 @@ nav {
     align-items: center;
     border: solid 0.2vw #fff;
     margin: 5vh 0; /* Margin for top and bottom */
+    background-color: #76048d;
 }
 /*Setting position between navigation-bar and nav-description*/
 nav ul {
@@ -128,8 +132,8 @@ nav button {
     border: solid 0.1vw #fc0404;
     border-style: collapse;
     border-radius: 0.5vw;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1.2em; 
+    font-family: 'e Elodea', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0.2vw 0.2vh  rgb(244, 8, 8);/**/
@@ -141,7 +145,7 @@ nav button:hover {
     transform: scale(1.2);
 }
 nav button:active {
-    transform: scale(0.95);/*Simulate effect while click button*/
+    transform: scale(0.85);/*Simulate effect while click button*/
 }
 /*Setting nav-description layout*/
 nav ul.navigation-description-points {
@@ -184,18 +188,23 @@ nav p.topic {
 nav p.font-name {
     font-weight: bold;
 }
+nav p.font-example {
+    font-family: 'e Elodea', sans-serif;
+    letter-spacing: 0.2rem;
+}
 /*Start the font style topic at the same vertical line*/
 nav pre {
     display: flex;
     align-items: flex-start;
 }
 
+
 /*Main part*/
 /*Setting all element in main part*/
 main {
     width: 60vw;
     height: 60vh;
-    background-color: #1a1616;
+    background-color: #76048d;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -207,7 +216,7 @@ main {
 main img {
     width: 20vw;
     height: 40vh;
-    margin: 3vh 0;
+    margin: 2vh 0;
     border: solid 0.3vw #000;
 }
 /*Setting button*/
@@ -218,22 +227,25 @@ main button {
     border: ridge 0.1vw #000000;
     border-style: collapse;
     border-radius: 0.3vw;
-    font-size: 1.4em;
-    font-family: 'e Elodea', sans-serif;
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     box-shadow: 0.3vw 0.3vh rgb(0, 0, 0);/**/
 }
 main button:hover {
     background-color: #000000;
     color: #ff0000;
-    box-shadow: 0.3vw 0.3vh rgb(50, 49, 49);
+    box-shadow: 0.3vw 0.3vh rgb(255, 255, 255);
+    font-family: 'e Elodea', sans-serif;
+    font-size: 1.5em;
 }
 main button:active {
     /*transform: scale(0.95);Simulate effect while click button*/
     margin-left: 0.3vw;
-    margin-top: 0.3vh;
     box-shadow: none;
+    font-family: 'e Elodea', sans-serif;
+    font-size: 1.5em;
 }
 /*Setting description part layout*/  
 main h2 {
@@ -275,6 +287,10 @@ main p.topic {
 main p.font-name {
     font-weight: bold;
 }
+main p.font-example {
+    font-family: 'e Elodea', sans-serif;
+    letter-spacing: 0.2rem;
+}
 /*Start the font style topic at the same vertical line*/
 main pre {
     display: flex;
@@ -283,6 +299,7 @@ main pre {
 
 
 /*Footer part*/
+/*Setting all element in footer*/
 footer {
     width: 60vw;
     height: 60vh;
@@ -293,4 +310,5 @@ footer {
     border-style: solid;
     border-color: #fff;
     border-width: 0.2vw;
+    background-color: #76048d;
 }
