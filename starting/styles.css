@@ -83,12 +83,10 @@ header p.font-example {
     letter-spacing: 0.2rem;
 }
 header p.topic {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: underline;
 }
 header p.font-name {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 /*Start the font style topic at the same vertical line*/
@@ -193,15 +191,94 @@ nav pre {
 }
 
 /*Main part*/
+/*Setting all element in main part*/
 main {
     width: 60vw;
     height: 60vh;
+    background-color: #1a1616;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid 0.2vw #fff;
+    margin: 5vh 0; /* Margin for top and bottom */
+}
+/*Setting manga pic layout*/
+main img {
+    width: 20vw;
+    height: 40vh;
+    margin: 3vh 0;
+    border: solid 0.3vw #000;
+}
+/*Setting button*/
+main button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 1vh 1vw;
+    border: ridge 0.1vw #000000;
+    border-style: collapse;
+    border-radius: 0.3vw;
+    font-size: 1.4em;
+    font-family: 'e Elodea', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0.3vw 0.3vh rgb(0, 0, 0);/**/
+}
+main button:hover {
+    background-color: #000000;
+    color: #ff0000;
+    box-shadow: 0.3vw 0.3vh rgb(50, 49, 49);
+}
+main button:active {
+    /*transform: scale(0.95);Simulate effect while click button*/
+    margin-left: 0.3vw;
+    margin-top: 0.3vh;
+    box-shadow: none;
+}
+/*Setting description part layout*/  
+main h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline overline 0.2vw;
+    color: #eeff00;
+}
+.content-description-points {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border: dashed 0.5vw #f0fc08;
+    width: 30vw;
+    height: 55vh;
+}
+/*Setting description style*/
+.content-description-points li {
+    margin: 2vh 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+/*Part color*/
+main li.color {
+    width: 10vw;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-style: solid;
-    border-color: #fff; 
-    border-width: 0.2vw;
+    background-color: red;
+    color: white;
+}
+/*Part font and text style*/
+main p.topic {
+    font-weight: bold;
+    text-decoration: underline;
+}
+main p.font-name {
+    font-weight: bold;
+}
+/*Start the font style topic at the same vertical line*/
+main pre {
+    display: flex;
+    align-items: flex-start;
 }
 
 
