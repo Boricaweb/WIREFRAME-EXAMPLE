@@ -7,8 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #24221e;
-    background-color:hsl(283, 100%, 67%);
+    color: #ffffff;
+    background-color:hsl(283, 88%, 24%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,12 +46,17 @@ header h1 {
     justify-content: center;
 } 
 /*Setting description part layout*/  
+header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline overline 0.2vw;
+    color: #eeff00;
+}
 .header-description-points {
     display: flex;
     align-items: center;
     flex-direction: column;
     list-style: none;
-    color: #24221e;
     border: dashed 0.5vw #f0fc08;
     width: 30vw;
     height: 55vh;
@@ -73,6 +78,10 @@ header li.color {
     color: white;
 }
 /*Part font and text style*/
+header p.font-example {
+    font-family: 'Chilling Nightime', sans-serif;
+    letter-spacing: 0.2rem;
+}
 header p.topic {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -81,11 +90,6 @@ header p.topic {
 header p.font-name {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-}
-header li.font {
-    display: block;
-    float: left;
-    font-family: 'Chilling Nightime', sans-serif;
 }
 /*Start the font style topic at the same vertical line*/
 header pre {
@@ -98,6 +102,7 @@ header pre {
 nav {
     width: 60vw;
     height: 60vh;
+    text-align: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -115,7 +120,7 @@ nav ul {
 nav ul.navigation-bar {
    display: flex;
    flex-direction: row;
-   margin: 5vh 0;
+   margin: 5vh 1.3vw 5vh 3vw;
 }
 /*Customized nav-bar button*/
 nav button {
@@ -138,51 +143,54 @@ nav button:hover {
     transform: scale(1.2);
 }
 nav button:active {
-    transform: scale(0.95);/*Simulate click button*/
+    transform: scale(0.95);/*Simulate effect while click button*/
 }
 /*Setting nav-description layout*/
 nav ul.navigation-description-points {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-items: center;
     list-style: none;
-    color: #24221e;
     border: dashed 0.5vw #f0fc08;
     width: 30vw;
     height: 55vh;
 }
 /*Setting description style*/
+nav h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline overline 0.2vw;
+    color: #eeff00;
+}
 nav ul.navigation-description-points li {
-    margin: 3vh 0;
-    font-size: 1em;
+    margin: 2vh 0;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 /*Part color*/
 nav li.color {
     width: 10vw;
     height: 10vh;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: black;
     color: white;
 }
 /*Part font and text style*/
 nav p.topic {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: underline;
 }
 nav p.font-name {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-nav li.font {
-    display: block;
-    float: left;
-    font-family: Arial, Helvetica, sans-serif;
+/*Start the font style topic at the same vertical line*/
+nav pre {
+    display: flex;
+    align-items: flex-start;
 }
-
 
 /*Main part*/
 main {
@@ -195,6 +203,7 @@ main {
     border-color: #fff; 
     border-width: 0.2vw;
 }
+
 
 /*Footer part*/
 footer {
