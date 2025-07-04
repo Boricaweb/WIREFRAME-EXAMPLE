@@ -58,8 +58,8 @@ header h1 {
 }
 /*Setting description style*/
 .header-description-points li {
-    margin: 3vh 0;
-    font-size: 1em;
+    margin: 2vh 0;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 /*Part color*/
@@ -86,6 +86,11 @@ header li.font {
     display: block;
     float: left;
     font-family: 'Chilling Nightime', sans-serif;
+}
+/*Start the font style topic at the same vertical line*/
+header pre {
+    display: flex;
+    align-items: flex-start;
 }
     
 /*Navigation part*/
