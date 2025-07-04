@@ -231,7 +231,7 @@ main button {
     font-family: Arial, sans-serif;
     cursor: pointer;
     transition: all 0.5s ease;
-    box-shadow: 0.3vw 0.3vh rgb(0, 0, 0);/**/
+    box-shadow: 0.3vw 0.3vh rgb(0, 0, 0);
 }
 main button:hover {
     background-color: #000000;
@@ -303,11 +303,62 @@ main pre {
 footer {
     width: 60vw;
     height: 60vh;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     border: solid 0.2vw #fff;
     margin: 5vh 0; /* Margin for top and bottom */
     background-color: #76048d;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+/*Setting footer section*/
+footer ul.contact{
+    list-style: none;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline overline 0.2vw;
+    color: #eeff00;
+}
+.contact-description-points {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border: dashed 0.5vw #f0fc08;
+    width: 30vw;
+    height: 55vh;
+}
+/*Setting description style*/
+.contact-description-points li {
+    margin: 2vh 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+/*Part color*/
+footer li.color {
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/*Part font and text style*/
+footer p.topic {
+    font-weight: bold;
+    text-decoration: underline;
+}
+footer p.font-name {
+    font-weight: bold;
+}
+/*Start the font style topic at the same vertical line*/
+footer pre {
+    display: flex;
 }
