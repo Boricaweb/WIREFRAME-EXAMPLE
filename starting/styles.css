@@ -305,10 +305,9 @@ footer {
     height: 60vh;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid 0.2vw #fff;
     margin: 5vh 0; /* Margin for top and bottom */
-    border-style: solid;
-    border-color: #fff;
-    border-width: 0.2vw;
     background-color: #76048d;
 }
