@@ -40,7 +40,7 @@ header h1 {
     margin: 5vh 0;
     border: solid 0.2vw #000;
     padding: 1vw;
-    background-image: url("/picture/Lnwdoraemon.jpg");
+    background-image: url("picture/Lnwdoraemon.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
