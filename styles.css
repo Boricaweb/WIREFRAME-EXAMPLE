@@ -6,7 +6,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #ffffff;
     background-color:hsl(283, 100%, 50%);
     display: flex;
@@ -31,7 +31,7 @@ header, nav, main, footer {
 /*Setting all element in header*/
 /*Setting Web name and logo position*/
 header h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-family: 'Chilling Nightime', sans-serif;
     font-weight: bold;      
     color: red;     
@@ -50,7 +50,7 @@ header h1 {
 } 
 /*Setting description part layout*/  
 header h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-decoration: underline overline 0.2vw;
     color: #eeff00;
@@ -67,7 +67,7 @@ header h2 {
 /*Setting description style*/
 .header-description-points li {
     margin: 2vh 0;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
 }
 /*Part color*/
@@ -122,7 +122,7 @@ nav button {
     border: solid 0.1vw #fc0404;
     border-style: collapse;
     border-radius: 0.5vw;
-    font-size: 1.2rem; 
+    font-size: 1rem; 
     font-family: 'e Elodea', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -149,14 +149,14 @@ nav ul.navigation-description-points {
 }
 /*Setting description style*/
 nav h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-decoration: underline overline 0.2vw;
     color: #eeff00;
 }
 nav ul.navigation-description-points li {
     margin: 2vh 0;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
 }
 /*Part color*/
@@ -180,7 +180,7 @@ nav p.font-name {
 }
 nav p.font-example {
     font-family: 'e Elodea', sans-serif;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
 }
 /*Start the font style topic at the same vertical line*/
 nav pre {
@@ -206,7 +206,7 @@ main button {
     border: ridge 0.1vw #000000;
     border-style: collapse;
     border-radius: 0.3vw;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Arial, sans-serif;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -228,7 +228,7 @@ main button:active {
 }
 /*Setting description part layout*/  
 main h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-decoration: underline overline 0.2vw;
     color: #eeff00;
@@ -245,7 +245,7 @@ main h2 {
 /*Setting description style*/
 .content-description-points li {
     margin: 2vh 0;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
 }
 /*Part color*/
@@ -268,7 +268,7 @@ main p.font-name {
 }
 main p.font-example {
     font-family: 'e Elodea', sans-serif;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
 }
 /*Start the font style topic at the same vertical line*/
 main pre {
@@ -282,13 +282,13 @@ main pre {
 /*Setting footer section*/
 footer ul.contact{
     list-style: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 footer h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-decoration: underline overline 0.2vw;
     color: #eeff00;
@@ -305,7 +305,7 @@ footer h2 {
 /*Setting description style*/
 .contact-description-points li {
     margin: 2vh 0;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
 }
 /*Part color*/
@@ -339,14 +339,36 @@ footer pre {
     }
     header h1, nav button, main button {
         width: 60%;
-        font-size: 0.5rem;
+        height: 60%;
+        background-size: cover;
+        font-size: 0.8rem;
     }
     header h2, nav h2, main h2, footer h2 {
         font-size: 0.7rem;
     }
     .header-description-points, .navigation-description-points, .content-description-points, .contact-description-points {
-        width: 100%;
+        width: 60%;
         height: auto;
         font-size: 0.1rem;
+    }
+}
+@media (min-width: 1400px) {
+    header, nav, main, footer {
+        width: 60%;
+        height: 60%;
+    }
+    header h1, nav button, main button {
+        width: 60%;
+        height: 60%;
+        background-size: cover;
+        font-size: 0.8rem;
+    }
+    header h2, nav h2, main h2, footer h2 {
+        font-size: 2rem;
+    }
+    .header-description-points, .navigation-description-points, .content-description-points, .contact-description-points {
+        width: 60%;
+        height: 80%;
+        font-size: 0.5rem;
     }
 }
