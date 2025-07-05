@@ -13,14 +13,11 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-
-/*Header part*/
-/*Setting all element in header*/
-header {
-    width: 60vw;
-    height: 60vh;
-    margin-top: 5vh;
+header, nav, main, footer {
+    width: 60%;
+    height: 70%;
+    margin-top: 2%;
+    padding: 1%;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -28,9 +25,13 @@ header {
     border: solid 0.2vw #FFF;
     background-color: #76048d;
 }
+
+
+/*Header part*/
+/*Setting all element in header*/
 /*Setting Web name and logo position*/
 header h1 {
-    font-size: 2.8em;
+    font-size: 2.8rem;
     font-family: 'Chilling Nightime', sans-serif;
     font-weight: bold;      
     color: red;     
@@ -100,17 +101,6 @@ header pre {
 
 /*Navigation part*/
 /*Setting all element in navigation*/
-nav {
-    width: 60vw;
-    height: 60vh;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: solid 0.2vw #fff;
-    margin: 5vh 0; /* Margin for top and bottom */
-    background-color: #76048d;
-}
 /*Setting position between navigation-bar and nav-description*/
 nav ul {
     list-style: none;
@@ -132,7 +122,7 @@ nav button {
     border: solid 0.1vw #fc0404;
     border-style: collapse;
     border-radius: 0.5vw;
-    font-size: 1.2em; 
+    font-size: 1.2rem; 
     font-family: 'e Elodea', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -201,17 +191,6 @@ nav pre {
 
 /*Main part*/
 /*Setting all element in main part*/
-main {
-    width: 60vw;
-    height: 60vh;
-    background-color: #76048d;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: solid 0.2vw #fff;
-    margin: 5vh 0; /* Margin for top and bottom */
-}
 /*Setting manga pic layout*/
 main img {
     width: 20vw;
@@ -227,7 +206,7 @@ main button {
     border: ridge 0.1vw #000000;
     border-style: collapse;
     border-radius: 0.3vw;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-family: Arial, sans-serif;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -238,14 +217,14 @@ main button:hover {
     color: #ff0000;
     box-shadow: 0.3vw 0.3vh rgb(255, 255, 255);
     font-family: 'e Elodea', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 main button:active {
     /*transform: scale(0.95);Simulate effect while click button*/
     margin-left: 0.3vw;
     box-shadow: none;
     font-family: 'e Elodea', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 /*Setting description part layout*/  
 main h2 {
@@ -300,21 +279,10 @@ main pre {
 
 /*Footer part*/
 /*Setting all element in footer*/
-footer {
-    width: 60vw;
-    height: 60vh;
-    border: solid 0.2vw #fff;
-    margin: 5vh 0; /* Margin for top and bottom */
-    background-color: #76048d;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-}
 /*Setting footer section*/
 footer ul.contact{
     list-style: none;
-    font-size: 1em;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -361,4 +329,24 @@ footer p.font-name {
 /*Start the font style topic at the same vertical line*/
 footer pre {
     display: flex;
+}
+
+/*Setting layout for all devices*/
+@media (max-width: 500px) {
+    header, nav, main, footer {
+        width: 60%;
+        height: auto;
+    }
+    header h1, nav button, main button {
+        width: 60%;
+        font-size: 0.5rem;
+    }
+    header h2, nav h2, main h2, footer h2 {
+        font-size: 0.7rem;
+    }
+    .header-description-points, .navigation-description-points, .content-description-points, .contact-description-points {
+        width: 100%;
+        height: auto;
+        font-size: 0.1rem;
+    }
 }
